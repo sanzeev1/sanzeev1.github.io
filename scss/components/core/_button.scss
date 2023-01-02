@@ -1,0 +1,77 @@
+
+// loop for button color
+
+@each $name, $value in $color {
+    $default:map-get($value, 'default');
+    $hover:map-get($value, 'hover');
+    $focus:map-get($value, 'focus');
+    $active: map-get($value, 'active');
+    
+    
+      .btn-#{$name} {
+         background: map-get($default,'background')!important;
+         color: map-get($default,'color' )!important;
+         border-color: currentColor!important;
+         outline: none!important;
+        
+        }
+        .btn-#{$name}:not(:disabled):not(.disabled):hover {
+          @if $hover{
+            background: map-get($hover,'background')!important;
+            color: map-get($hover,'color' )!important;
+          }
+          @else {
+            @extend .btn-#{$name};
+          }
+  
+  
+        }
+        .btn-#{$name}:not(:disabled):not(.disabled):focus {
+          @if $focus{
+            background : map-get($focus,'background')!important;
+            color: map-get($focus,'color' )!important;
+          }
+          @else if $hover{
+            @extend  .btn-#{$name}:hover;
+          }
+          @else {
+            @extend .btn-#{$name};
+          }
+         
+        }
+        .btn-#{$name}:not(:disabled):not(.disabled):active {
+          @if $active{
+            background: map-get($active,'background')!important;
+            color: map-get($active,'color' )!important;
+          }
+        @else if $hover{
+          
+           @extend  .btn-#{$name}:hover;
+          }
+          @else {
+            @extend .btn-#{$name};
+          }
+        }
+         
+        }
+       
+      
+  //loop for button font size
+    
+  
+  //
+  @each $name,$value in $btnFontSize{
+    .btn#{$name}{
+    @if map-get($value,fluid){
+      
+      // mixin is called form mixin.scss and map is called from variable.scss
+    @include  fontSize( map-get($value,'minSize'), map-get($value,'maxSize'), map-get($value,'minWidth'), map-get($value,'maxWidth'));
+          
+    }
+    @else{
+      font-size:map-get($value,'minSize') + px!important;
+    
+    }
+  }
+  }
+  

@@ -1,0 +1,34 @@
+// core/border uses $color variable included in variable.scss to form border color
+
+
+
+
+%border{
+  border: 1.5px solid $secondary-color;
+}
+
+.border{
+  border: 1.5px solid $secondary-color!important;
+}
+
+@import'./core/border';
+
+.rounded {
+  border-radius: 70px!important;
+}
+
+
+
+.border-botton1{
+  border-bottom: 1px solid rgb(89, 89, 89);
+}
+.card{
+  border: none;
+
+}
+ 
+   
+  
+
+
+

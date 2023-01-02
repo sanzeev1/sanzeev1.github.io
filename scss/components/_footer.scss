@@ -1,0 +1,44 @@
+%transition{
+    transition: all ease .4s;
+}
+.inner-footer {
+    .arrow{
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        font-size: 20px;
+        left:150px;
+}
+    ul {
+        li {
+            
+           line-height: 1.5;
+        }
+    }
+}
+
+footer {
+   background-color: $dark-bg;
+   .h1{
+    font-family: 'OpenSans-ExtraBold';
+   }
+    h4{
+        letter-spacing: 1px;
+    } 
+}
+
+
+footer{
+    .social-media-icons{
+             li{
+                &:nth-child(3):hover{
+                    background-color: $youtube-color!important;
+                    @extend %transition;             }
+               
+        } 
+    }
+}
+
+

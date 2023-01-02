@@ -1,0 +1,23 @@
+//include  font size
+
+//font size variable $font-size is imported from variable.scss in core/fontSize
+
+@import './core/fontSize';
+
+.fs-14,.fs-12{
+    letter-spacing: 1px;
+}
+
+.fs-17{
+    letter-spacing: 2px;
+}
+
+
+.font-weight-semi-bold{
+    font-weight: 600;
+}
+.font-weight-medium{
+    font-weight: 500;
+
+}
+

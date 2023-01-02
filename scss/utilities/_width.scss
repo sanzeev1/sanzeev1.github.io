@@ -1,0 +1,28 @@
+
+//$max-width variable is included in variable.scss
+@each $name, $value in $max-width{
+    .mw-#{$name}{
+        max-width: $value + px;
+   }
+   @each $breakpointname, $breakpointvalue in  $breakpoint{
+    @media screen and (max-width:$breakpointvalue)
+    {
+        .mw-#{$breakpointname}-#{$name}{
+            max-width: $value + px;
+        }
+          
+    }
+     }
+    
+}
+
+
+
+//width variable is included in variable.scss
+@each $name, $value in $width{
+    .w-#{$name}{
+        max-width: $value + px;
+   }
+    
+}
+

@@ -1,0 +1,296 @@
+//Color variables
+
+$primary-color: #31BC71;
+$secondary-color: #121212;
+$white-color: #EEEEEE;
+$dark-bg:#010101;
+$light-grey-color:#BDBDBD;
+$ternary-color: #fff;
+$very-light-grey-color:#eeeeee;
+$grey-color:#D9D9D9;
+$bg-card-color:#F2F6FE;
+$medium-grey-color:#666666;
+$dark-grey-color: #858585;
+$light-black-color: #333;
+$light-grey1-color:#aaa;
+$facebook-color:#3b5998;
+$instagram-color: #527fa6;
+$twitter-color:#00acee;
+$linkedin-color:#007fb1;
+$youtube-color:#C52F30;
+
+
+// font Sizes for tag and class with media query
+$font-size:(
+    
+    h1:(
+        minSize:66,
+        maxSize:45,
+        minWidth:1150,
+        maxWidth:500,
+        fluid:true,
+        tag:true
+        
+    ),
+    h2:(
+        minSize:54,
+        maxSize:46,
+        minWidth:1150,
+        maxWidth:500,
+        fluid:true,
+        tag:true
+        
+    ),
+    h3:(
+        minSize:32,
+        maxSize:28,
+        minWidth:1200,
+        maxWidth:500,
+        fluid:true,
+        tag:true
+
+    ),
+     h4:(
+        minSize:39,
+        maxSize:29,
+        minWidth:1200,
+        maxWidth:500,
+        fluid:true,
+        tag:true
+        
+    ),
+    h5:(
+        minSize:31,
+        maxSize:21,
+        minWidth:1200,
+        maxWidth:500,
+        fluid:true,
+        tag:true
+        
+    ),
+     h6:(
+        minSize:25,
+        maxSize:15,
+        minWidth:1200,
+        maxWidth:500,
+        fluid:true,
+        tag:true
+        
+    ),
+    p:(
+        minSize:16,
+        maxSize:10,
+        minWidth:1200,
+        maxWidth:720,
+        fluid:true,
+        tag:true
+    ), 
+     
+    small:(
+        minSize:10,
+       
+        fluid: false,
+        tag:true
+        
+    ),
+   
+    fs-20:(
+        minSize:20,
+        maxSize:15,
+        minWidth:1200,
+        maxWidth:500,
+        fluid:true
+    ),
+    fs-13:(
+        minSize:13,
+        maxSize:10,
+        minWidth:1200,
+        maxWidth:500,
+        fluid:true
+    ),
+);
+
+
+
+
+//responsive- breakpoint
+$breakpoint:(
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px
+);
+
+$container-width:(
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px
+);
+
+// font size for social media icons
+
+$socialmedia-icon:(
+    linkedin:(
+        xsm:14px,  
+        sm:15px,
+        md:25px,
+        lg:16px,
+        xl:25px
+    ),
+    behance:(
+        xsm:13px,
+       sm:14px,
+       md:23px,
+       lg:24px,
+       xl:25px
+    ),
+    dribbble:(
+        xsm:13px,
+        sm:15px,
+        md:23px,
+        lg:24px,
+        xl:25px
+    )
+);
+
+
+
+//map for margin and padding
+$gap:(
+    35:35px,
+    28:28px,
+    40:40px,
+    25:25px,
+    45:45px,
+    50:50px ,
+    54:54px,
+    60:60px,
+    70:70px, 
+    80:80px, 
+    90:90px, 
+    100:100px,
+
+    120:120px,
+    130:130px,
+    140:140px,
+    150:150px,
+    155:155px,
+    175:175px,
+    200:200px,
+    250:250px,
+    300:300px
+    );
+
+//map for font weight
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+//map for  button fontsize
+
+$btnFontSize:(
+    -sm:(
+        minSize: 13,
+        fluid: false
+        ),
+
+    -lg:(
+        minSize: 20.31,
+        maxSize:15,
+        minWidth:801,
+        maxWidth:800,
+        fluid: true
+    ),
+
+    -block:(
+        minSize:20.31,
+        maxSize:15,
+        minWidth:801,
+        maxWidth:800,
+        fluid: true
+    ),
+   
+);
+
+
+//map for colors
+$color:(
+    primary:(
+        default:(
+            background: $primary-color,
+             color: $ternary-color,
+        ),
+        hover:(
+            background: $primary-color,
+            color : $ternary-color
+        )
+         
+    ),
+
+    secondary:(
+        default:(
+            background: $secondary-color,
+             color: $ternary-color,
+        ),
+        hover:(
+            background: $primary-color,
+            color : $ternary-color
+        )
+
+    ),
+    ternary:(
+        default:(
+            background: $ternary-color,
+             color: $secondary-color,
+        ),
+        hover:(
+            background: $primary-color,
+            color : $ternary-color
+        )
+        
+     ),
+
+    default:(
+        default:(
+            background:$secondary-color,
+            color:$ternary-color
+
+        ),
+        hover:(
+            background:$light-black-color,
+            color:$ternary-color
+        )   
+    ),
+
+    transparent:(
+        default:(
+            background: transparent
+        )
+    )
+);
+//map for aspect ratio
+$aspectRatio:(
+        555by411: 555 / 411,         
+);
+
+
+$height:(
+    60px: 60,
+    65px: 65,
+    100px: 100,
+    105px:105,  
+);
+
+//width
+$width:(
+    60px:60,
+    205px:205,
+    150px:150,
+    250px:250,
+    90px:90
+);
+
+//max-width
+$max-width:(
+    335px:335,
+    1000px:1000
+);

@@ -1,0 +1,21 @@
+//used in button.scss , fontsize.scss
+
+// mixin for fontsize with 4 argument
+@mixin fontSize($maxSize, $minSize , $maxWidth, $minWidth) {
+  font-size: calc(#{$minSize + "px"} + (#{$maxSize }  - #{$minSize}) * ((100vw - #{$minWidth + "px"}) / (#{$maxWidth} - 500))) !important;
+
+@media screen and (max-width: $minWidth + px){
+  font-size: $minSize + px !important;
+ }
+
+@media screen and (min-width: $maxWidth + px){
+   font-size:$maxSize + px !important;
+}
+
+
+}
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+@each $name,$value in $font-size{
+    .#{$name}{
+      @if map-get($value, 'fluid'){
+        @include  fontSize( map-get($value,'minSize'), map-get($value,'maxSize'), map-get($value,'minWidth'), map-get($value,'maxWidth'));
+      }
+      @else{
+        font-size: map-get($value, 'minSize') + px !important;
+      }
+      }
+    
+
+    @if map-get($value, 'tag') {
+        #{$name}{
+          @extend .#{$name} ;
+        }
+        
+      }
+
+     
+
+  }    
+    
+
+
+
+  

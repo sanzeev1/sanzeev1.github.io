@@ -1,0 +1,10 @@
+
+//$height variable is included in variable.scss
+@each $name, $value in $height{
+    .h-#{$name}{
+        height: $value + px;
+        object-fit: cover;
+    }
+    
+}
+

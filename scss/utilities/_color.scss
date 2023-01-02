@@ -1,0 +1,7 @@
+//core/color use $color variable included in variable.scss to form text color
+
+@import'./core/color';
+
+a:hover, a:focus{
+  color: currentColor;
+}

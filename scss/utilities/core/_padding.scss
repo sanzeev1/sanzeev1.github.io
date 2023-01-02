@@ -1,0 +1,43 @@
+@each $name, $value in $gap{
+    .p-#{$name}{
+        padding:$value;
+    }
+    .pt-#{$name}, .py-#{$name}{
+        padding-top:$value;
+    }
+    .pb-#{$name}, .py-#{$name}{
+        padding-bottom:$value;
+    }
+    .pl-#{$name}, .px-#{$name}{
+        padding-left:$value;
+    }
+    .pr-#{$name}, .px-#{$name}{
+        padding-right:$value;
+    }
+    
+
+
+
+    @each $breakpointname, $breakpointvalue in  $breakpoint{
+        @media screen and (min-width:$breakpointvalue)
+        {
+            .p-#{$breakpointname}-#{$name}{
+                padding:$value;
+            }
+            .pt-#{$breakpointname}-#{$name}, .py-#{$breakpointname}-#{$name}{
+                padding-top:$value;
+            }
+            .pb-#{$breakpointname}-#{$name}, .py-#{$breakpointname}-#{$name}{
+                padding-bottom:$value;
+            }
+            .pl-#{$breakpointname}-#{$name}, .px-#{$breakpointname}-#{$name}{
+                padding-left:$value;
+            }
+            .pr-#{$breakpointname}-#{$name}, .px-#{$breakpointname}-#{$name}{
+                padding-right:$value;
+            }   
+        }
+    }
+}
+
+

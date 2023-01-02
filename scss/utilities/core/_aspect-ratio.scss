@@ -1,0 +1,39 @@
+.aspect-ratio{
+    position: relative;
+    width: 100%;
+    height:0px;
+    padding-top: 100%;
+}
+
+ @each $name, $value in $aspectRatio {
+    .aspect-ratio-#{$name}{
+       
+        padding-top: #{100 / $value + "%" } ;
+    }
+
+
+
+
+@each $breakpointname, $breakpointvalue in  $breakpoint{
+    @media screen and (max-width:$breakpointvalue)
+    {
+        .aspect-ratio-#{$breakpointname}-#{$name}{  
+            position: relative;
+            width: 100%;
+            padding-top: #{100 / $value + "%" } ;
+            }
+    }
+
+    }
+}
+
+.aspect-ratio-img{
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+    object-fit: cover;
+}

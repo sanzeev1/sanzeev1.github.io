@@ -1,0 +1,12 @@
+// core/bg  uses $color variable from variable.scss for background color
+@import './core/bg';
+
+.hero-section{
+    background: url(../image/2.png) no-repeat  top center;
+    height: 100vh;
+    position: relative;
+    // background-attachment: fixed;
+    
+}
+
+

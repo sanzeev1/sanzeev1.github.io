@@ -1,0 +1,39 @@
+@each $name, $value in $gap{
+    .m-#{$name}{
+        margin:$value;
+    }
+    .mt-#{$name}, .my-#{$name}{
+        margin-top:$value;
+    }
+    .mb-#{$name}, .my-#{$name}{
+        margin-bottom:$value;
+    }
+    .ml-#{$name}, .mx-#{$name}{
+        margin-left:$value;
+    }
+    .mr-#{$name}, .mx-#{$name}{
+        margin-right:$value;
+    }
+    
+    @each $breakpointname, $breakpointvalue in  $breakpoint{
+        @media screen and (min-width:$breakpointvalue)
+        {
+            .m-#{$breakpointname}-#{$name}{
+                margin:$value;
+            }
+            .mt-#{$breakpointname}-#{$name}, .my-#{$breakpointname}-#{$name}{
+                margin-top:$value;
+            }
+            .mb-#{$breakpointname}-#{$name}, .my-#{$breakpointname}-#{$name}{
+                margin-bottom:$value;
+            }
+            .ml-#{$breakpointname}-#{$name}, .mx-#{$breakpointname}-#{$name}{
+                margin-left:$value;
+            }
+            .mr-#{$breakpointname}-#{$name}, .mx-#{$breakpointname}-#{$name}{
+                margin-right:$value;
+            }   
+        }
+    }
+
+}

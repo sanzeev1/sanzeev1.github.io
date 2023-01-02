@@ -1,0 +1,8 @@
+@each $name, $value in $color {
+  $default:map-get($value, 'default');
+    .text-#{$name}
+   {
+      color:map-get($default, 'background' ) !important;
+     }
+  }
+

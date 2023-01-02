@@ -1,0 +1,31 @@
+
+.navbar-toggler {
+	.close {
+		display: inline-block;
+	}
+	.navbar-toggler-icon {
+		display: none;
+	}
+}
+.navbar-toggler.collapsed {
+	.close {
+		display: none;
+	}
+	.navbar-toggler-icon {
+		display: inline-block;
+	}
+}
+
+
+.close {
+	
+    opacity: 1;
+    
+    &:hover{
+        opacity: 1;  
+    }
+
+ }
+ 
+  
+

@@ -1,0 +1,14 @@
+
+@each $name, $value in $color {
+    $default:map-get($value, 'default');
+     .border-#{$name} {
+        border-color: map-get($default,'background')!important ;
+        }
+      .border-hover-#{$name}:hover{
+          border-color: map-get($default,'background')!important;
+        }
+    }
+  
+  
+
+  

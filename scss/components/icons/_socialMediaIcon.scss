@@ -1,0 +1,19 @@
+@each $name, $value in $socialmedia-icon{
+    .fs-#{$name}{
+        font-size:  map-get($value, 'md' ) ;
+    }
+    .fs-sm-#{$name}{
+        font-size: map-get($value, 'sm' );
+    }
+    .fs-lg-#{$name}{
+        font-size: map-get($value, 'lg' );
+    }
+    .fs-xl-#{$name}{
+        font-size: map-get($value, 'xl' );
+    }
+    .fs-xsm-#{$name}{
+        font-size: map-get($value, 'xsm' );
+    }
+   
+
+}

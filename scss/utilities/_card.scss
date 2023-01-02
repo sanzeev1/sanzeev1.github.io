@@ -1,0 +1,96 @@
+.card-text{ 
+    line-height: 1.4;   
+  }
+
+  time{
+    line-height: 1;
+}
+
+label, input, textarea{
+  font-family: 'poppins-regular', sans-serif;
+}
+.text-poppins{
+  font-family: 'poppins-medium', sans-serif;
+}
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.06)!important;
+}
+
+.card{
+  background-color: $bg-card-color;
+  cursor: pointer;
+  &.service{
+    &:hover{
+      background-color: $secondary-color;
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      .card-text,.card-title
+  {
+        color: $ternary-color!important;
+      }
+  
+  
+    }
+  }
+ 
+  .social-media-icons{
+    ul{
+      li{
+        list-style: none;
+            margin: 0px 5px;
+            background-color: $dark-grey-color;
+            border-radius: 50%;
+        a{
+          position: relative;
+          display: block;
+          width: 25px;
+          height: 25px;
+          
+          
+          text-align: center;
+       
+          i{
+            line-height: 26px;
+            color: $ternary-color;
+          }
+        }
+      }
+    }
+  }
+  ul{
+    li{
+      img{
+        position: relative;
+      }
+     
+    }
+  }
+}
+
+.card-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

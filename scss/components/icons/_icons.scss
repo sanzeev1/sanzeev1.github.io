@@ -1,0 +1,53 @@
+
+.close {
+	position: relative;
+	right: 0px;
+	top: -10px;
+	width: 40px;
+	
+    &::before,
+    &::after{
+        position: absolute;
+	    left: 29px;
+	    content: ' ';
+        height: 25px;
+        width: 2px;
+		background-color: $ternary-color;
+		transform: rotate(45deg);
+    }
+    &::after{
+        transform: rotate(-45deg);
+    }
+  }
+
+
+  @media screen and (max-width:1200px){
+    .icons-collection{
+      background-size: 24%;
+      height:195px;
+    }
+  }
+
+
+.scrollToTop{
+    right: 20px;
+    bottom:20px;
+    cursor: pointer;
+    color:$primary-color;
+    pointer-events: auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    z-index: 40;
+    text-align: center;
+    color: $ternary-color;
+    line-height: 48px;
+   
+   i{
+    font-size: 1.5em;;
+  }
+}
+
+

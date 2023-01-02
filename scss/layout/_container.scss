@@ -1,0 +1,52 @@
+
+
+
+// @media (min-width: 1200px){
+//     .container {
+//         max-width: 1140px;
+//         }
+// }
+
+// @media screen and (max-width: 991px){
+//     .container {
+//         max-width: 1350px;
+//     }
+// }
+
+// @each $name, $value in $container-width{
+//     .mw-#{$name}{
+//         max-width:$value;
+//     }
+    
+    
+
+
+
+//     @each $breakpointname, $breakpointvalue in  $breakpoint{
+//         @media screen and (min-width:$breakpointvalue)
+//         {
+//             .mw-#{$breakpointname}-#{$name}{
+//                 max-width:$value;
+//             }
+              
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+// @media screen and (min-width: 992px) {
+//     .container {
+//         max-width: 900px;
+//     }
+// }
+
+// @media screen and (max-width: 632px){
+//     .container.mw-375px{
+//         max-width: 375px;
+//     }
+// }
