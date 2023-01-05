@@ -1,29 +1,30 @@
-.card-text{ 
-    line-height: 1.4;   
-  }
-
-  time{
-    line-height: 1;
+.card-text {
+  line-height: 1.4;
 }
 
-label, input, textarea{
+label,
+input,
+textarea {
   font-family: 'poppins-regular', sans-serif;
 }
-.text-poppins{
+
+.text-poppins {
   font-family: 'poppins-medium', sans-serif;
 }
+
 .shadow {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.06)!important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .06) !important;
 }
 
-.card{
+.card {
   background-color: $secondary-color;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
--moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
   cursor: pointer;
-  &.service{
-    &:hover{
+
+  &.service {
+    &:hover {
       background-color: $primary-color;
       -webkit-box-shadow: 0px 0px 20px 0px rgba(52, 234, 131, 0.45);
       -moz-box-shadow: 0px 0px 20px 0px rgba(52, 234, 131, 0.45);
@@ -33,41 +34,45 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
       -moz-transition: all 0.5s ease-in-out;
       -ms-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
-      & img{
+
+      & img {
         filter: invert(31%) sepia(75%) saturate(2106%) hue-rotate(182deg) brightness(127%) contrast(137%);
 
       }
+
       & .number {
-        h1{
+        h1 {
           color: #0080004f;
         }
       }
-      .card-text,.card-title
-  {
-        color: $ternary-color!important;
+
+      .card-text,
+      .card-title {
+        color: $ternary-color !important;
       }
-  
-  
+
+
     }
   }
- 
-  .social-media-icons{
-    ul{
-      li{
+
+  .social-media-icons {
+    ul {
+      li {
         list-style: none;
-            margin: 0px 5px;
-            background-color: $dark-grey-color;
-            border-radius: 50%;
-        a{
+        margin: 0px 5px;
+        background-color: $dark-grey-color;
+        border-radius: 50%;
+
+        a {
           position: relative;
           display: block;
           width: 25px;
           height: 25px;
-          
-          
+
+
           text-align: center;
-       
-          i{
+
+          i {
             line-height: 26px;
             color: $ternary-color;
           }
@@ -75,12 +80,13 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
       }
     }
   }
-  ul{
-    li{
-      img{
+
+  ul {
+    li {
+      img {
         position: relative;
       }
-     
+
     }
   }
 }
@@ -94,18 +100,3 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-

@@ -69,6 +69,8 @@
 }
 }
 
+
+
 a#scroll-btn {
   position: absolute;
   height: 55px;
@@ -109,6 +111,13 @@ a#scroll-btn {
     letter-spacing: 3px;
     font-weight: 600;
 	}
+}
+
+@media screen and (max-width:768px) {
+  a#scroll-btn{
+    bottom: -120px!important;
+  }
+  
 }
 #section-2 {
 	background-color: $primary-color;
