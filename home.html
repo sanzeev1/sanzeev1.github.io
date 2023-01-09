@@ -15,6 +15,10 @@
 
     <link rel="manifest" href="image/site.webmanifest">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    	<link rel="stylesheet" href="./plugin/components/Fancybox/jquery.fancybox.min.css">
+         <!-- only if you use fancybox -->
+
+    <link rel="stylesheet" type="text/css" href="./plugin/css/mediaBoxes.css">
 
     <title>@Sanjeev </title>
 </head>
@@ -90,64 +94,78 @@
         <div class="container  mt-5 pt-md-4 pt-sm-3 pt-3 mw-sm-335px">
             <div class="fs-75 text-uppercase open-sans-extra-bold text-light-black">works</div>
             <h2 class="open-sans-extra-bold text-uppercase  text-white mt-n50">Recent works</h2>
-            <div class="row mt-md-60 mt-sm-50 mt-50">
-                <div class="col-12 col-sm-6 col-lg-4 mb-lg-0 mb-md-5 mb-sm-5 mb-5 pb-sm">
-                    <div class="card service px-40 py-45  h-100">
-                        <div class="card-avatar  d-flex justify-content-center">
-                           <img src="./image/Web.svg" alt="">
-                        </div>
-
-                        <div class="card-body px-0 pb-0">
-                            <h5 class="card-title h6 text-uppercase text-white font-weight-semi-bold pb-2 ">Web Design
-                            </h5>
-                            <div class="card-text text-white  mt-n23">
-                                <p>Beautiful and reults driven website design</p>
-                            </div>
-                            <div class="number">
-                                <h1 class="open-sans-extra-bold text-right">01</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-lg-0 mb-md-5 mb-sm-5 mb-5 pb-sm">
-                    <div class="card service px-40 py-45  h-100">
-                        <div class="card-avatar  d-flex justify-content-center">
-                           <img src="./image/category.svg" alt="">
-                        </div>
-
-                        <div class="card-body px-0 pb-0">
-                            <h5 class="card-title h6 text-uppercase text-white font-weight-semi-bold pb-2 ">UX/UI Design
-                            </h5>
-                            <div class="card-text text-white  mt-n23">
-                                <p>Perfecting digital experiences through human centered designs</p>
-                            </div>
-                            <div class="number">
-                                <h1 class="open-sans-extra-bold text-right">02</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-lg-0 mb-md-5 mb-sm-5 mb-5 pb-sm">
-                    <div class="card service px-40 py-45  h-100">
-                        <div class="card-avatar  d-flex justify-content-center">
-                           <img src="./image/mobile.svg" alt="">
-                        </div>
-
-                        <div class="card-body px-0 pb-0">
-                            <h5 class="card-title h6 text-uppercase text-white font-weight-semi-bold pb-2 ">Responsive Layouts
-                            </h5>
-                            <div class="card-text text-white  mt-n23">
-                                <p>Responsive layouts design meeting clients needs.</p>
-                            </div>
-                            <div class="number">
-                                <h1 class="open-sans-extra-bold text-right">03</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="grid" class="mt-md-60 mt-sm-50 mt-50">
         
-            </div>
-
+            <!-- -------------------------- BOX MARKUP -------------------------- -->      
+                    <div class="media-box indoors">
+                        <div class="media-box-image mb-open-popup" data-type="iframe" data-src="./image/aala.png">
+                            <div data-width="752" data-height="500" data-thumbnail="./image/aala.png" ></div>
+                            
+                            <div class="thumbnail-overlay">
+                                <div class="media-box-title">Aala App</div>
+                                <div class="media-box-date">UI Design, Branding</div>
+                            </div>
+                        </div>
+                    </div>
+                  
+            <!-- -------------------------- BOX MARKUP -------------------------- -->      
+                    <div class="media-box outside">
+                        <div class="media-box-image mb-open-popup" data-src="./image/groceryworls.png">
+                            <div data-width="752" data-height="1000" data-thumbnail="./image/groceryworls.png" ></div>
+                            
+                            <div class="thumbnail-overlay">
+                                <div class="media-box-title">Grocery Works</div>
+                                <div class="media-box-date">UI/UX Design, Web Design</div>
+                            </div>
+                        </div>
+                    </div>
+        
+            <!-- -------------------------- BOX MARKUP -------------------------- -->      
+                    <div class="media-box photography">
+                        <div class="media-box-image mb-open-popup" data-src="./image/Hospitals.png">
+                            <div data-width="752" data-height="560" data-thumbnail="./image/Hospitals.png" ></div>
+                            
+                            <div class="thumbnail-overlay">
+                                <div class="media-box-title">DoctorLive24</div>
+                                <div class="media-box-date">UI/UX Design</div>
+                            </div>
+                        </div>
+                    </div>
+                 
+       
+        
+            <!-- -------------------------- BOX MARKUP -------------------------- -->      
+                    <div class="media-box photography">
+                        <div class="media-box-image mb-open-popup" data-src="./image/aalaw.png">
+                            <div data-width="752" data-height="500" data-thumbnail="./image/aalaw.png" ></div>
+                            
+                            <div class="thumbnail-overlay">
+                                <div class="media-box-title">Aala</div>
+                                <div class="media-box-date">UI/ UX Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            <!-- -------------------------- BOX MARKUP -------------------------- -->      
+                    <div class="media-box indoors">
+                        <div class="media-box-image mb-open-popup" data-src="./image/lawyer.png">
+                            <div data-width="752" data-height="498" data-thumbnail="./image/lawyer.png" ></div>
+                            
+                            <div class="thumbnail-overlay">
+                                <div class="media-box-title">Hamrolawyer</div>
+                                <div class="media-box-date">UI Design, Web Design, Branding</div>
+                            </div>
+                        </div>
+                    </div>
+             
+   
+      
+ 
+                    
+ 
+                             
+                  
+               </div> <!-- #grid -->
         </div>
     </section>
     <section id="services" class="mt-100" data-aos="fade-up" data-aos-duration="1000">
@@ -254,6 +272,7 @@
 
 
     <!-- jQuery library -->
+    <script src="./plugin/components/jQuery/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
 
     <!-- Popper JS -->
@@ -263,6 +282,15 @@
 
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/lightslider.js"></script>
+    <script src="./plugin/components/Isotope/jquery.isotope.min.js"></script>
+	<script src="./plugin/components/imagesLoaded/jquery.imagesLoaded.min.js"></script>
+	<script src="./plugin/components/Transit/jquery.transit.min.js"></script>
+	<script src="./plugin/components/jQuery Easing/jquery.easing.js"></script>
+	<script src="./plugin/components/jQuery Visible/jquery.visible.min.js"></script>
+	<script src="./plugin/components/Modernizr/modernizr.custom.min.js"></script>
+	<script src="./plugin/components/Fancybox/jquery.fancybox.min.js"></script> <!-- only if you use Fancybox -->
+	<script src="./plugin/js/jquery.mediaBoxes.dropdown.js"></script>
+	<script src="./plugin/js/jquery.mediaBoxes.js"></script>
     <script src="./js/main.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -126,3 +126,31 @@ class TypeWritter {
     new TypeWritter(txtElement, words, wait);
   }
   
+
+
+
+
+  $('#grid').mediaBoxes({
+    filterContainer: '#filter',
+    search: '#search',
+    columns: 3,
+    boxesToLoadStart: 9,
+    boxesToLoad: 9,
+    horizontalSpaceBetweenBoxes: 30,
+      verticalSpaceBetweenBoxes: 30,
+      minBoxesPerFilter: 20,
+      deepLinkingOnFilter: false,
+      deepLinkingOnPopup: false,
+      animation_on_thumbnail_overlay_hover : [
+        { item : '.media-box-title', animation : 'from-top' },
+        { item : '.media-box-date', animation : 'from-bottom' }
+      ],
+      fancybox: {
+        idleTime : 99999999999,    // Display thumbnails on opening/closing
+        buttons             :   [ '','', '', 'close' ],
+        arrows              : false,
+        keyboard            : false,
+      },
+  }); 
+
+

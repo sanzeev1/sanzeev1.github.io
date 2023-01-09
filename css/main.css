@@ -842,7 +842,7 @@ a#scroll-btn:after {
   display: block;
   width: 100%;
   padding: 0;
-  margin: 10px 0;
+  margin: 50px 0;
   text-align: center;
   list-style: none;
   pointer-events: none;
@@ -5969,5 +5969,121 @@ textarea {
   background: url(../image/2.png) no-repeat top center;
   height: 100vh;
   position: relative;
+}
+
+/* Fancybox full width and height on iframes */
+.fancyboxMB-slide {
+  padding: 0 !important;
+}
+
+.fancyboxMB-slide--iframe .fancyboxMB-content {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0;
+}
+
+/* == LETS MODIFY SOME COLORS AND STYLE FOR THE DEMO == */
+/* hide no more entries button */
+.media-boxes-no-more-entries {
+  display: none;
+}
+
+/* make your own style of the filter */
+.filters-container {
+  margin-bottom: 20px;
+}
+
+.custom-filter {
+  padding: 0;
+  text-align: right;
+}
+
+.custom-filter li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 12px;
+}
+
+.custom-filter li a {
+  color: #999;
+  text-decoration: none;
+}
+
+.custom-filter li a:hover {
+  color: #333;
+}
+
+.custom-filter li a.selected {
+  color: #D1474C !important;
+}
+
+/* Set the style of the thumbnail overlay items */
+.media-box-title {
+  color: #fff;
+  font-size: 11px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.media-box-date {
+  color: #F2F2F2;
+  font-size: 10px;
+}
+
+/* Remove box shadow and border-radius from the media boxes */
+.media-box-container {
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+
+/* thumbnail overlay background */
+.thumbnail-overlay {
+  background-color: #31BC71;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+/* hover effect on the thumbnail-overlay */
+.thumbnail-overlay:hover {
+  background-color: rgba(49, 188, 113, 0.9) !important;
+}
+
+/* hover effect on the image */
+.media-box-image img {
+  -webkit-transition: transform 0.6s ease-in-out;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.media-box-image:hover img {
+  -webkit-transform: scale(1.2) translate(-20px);
+  transform: scale(1.2) translate(-20px);
+}
+
+/* Change alignment in grid 2 */
+#grid2 .thumbnail-overlay > div.aligment > div.aligment {
+  vertical-align: bottom;
+  padding-bottom: 40px;
+}
+
+.thumbnail-overlay .media-box-title {
+  font-size: 16px;
+}
+
+.thumbnail-overlay .media-box-date {
+  font-style: italic;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
