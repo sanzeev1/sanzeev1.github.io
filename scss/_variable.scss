@@ -5,21 +5,9 @@ $secondary-color: #121212;
 $white-color: #EEEEEE;
 $dark-bg:#010101;
 $light-black:#17181a;
-
-$light-grey-color:#BDBDBD;
 $ternary-color: #fff;
-$very-light-grey-color:#eeeeee;
-$grey-color:#D9D9D9;
-$bg-card-color:#F2F6FE;
-$medium-grey-color:#666666;
 $dark-grey-color: #858585;
-$light-black-color: #333;
-$light-grey1-color:#aaa;
-$facebook-color:#3b5998;
-$instagram-color: #527fa6;
-$twitter-color:#00acee;
-$linkedin-color:#007fb1;
-$youtube-color:#C52F30;
+
 
 
 // font Sizes for tag and class with media query
@@ -268,7 +256,7 @@ $color:(
 
         ),
         hover:(
-            background:$light-black-color,
+            background:$secondary-color,
             color:$ternary-color
         )   
     ),
