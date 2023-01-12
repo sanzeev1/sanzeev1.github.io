@@ -6031,7 +6031,7 @@ textarea {
 }
 
 .media-box-date {
-  color: #F2F2F2;
+  color: #EEEEEE;
   font-size: 10px;
 }
 
@@ -6079,11 +6079,17 @@ textarea {
 }
 
 .thumbnail-overlay .media-box-title {
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .thumbnail-overlay .media-box-date {
+  margin-top: 10px;
   font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.fancyboxMB-content html img {
+  width: 100% !important;
 }
 /*# sourceMappingURL=main.css.map */
