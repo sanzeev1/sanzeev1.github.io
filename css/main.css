@@ -5835,7 +5835,7 @@ textarea {
           filter: invert(31%) sepia(75%) saturate(2106%) hue-rotate(182deg) brightness(127%) contrast(137%);
 }
 
-.card.service:hover .number h1 {
+.card.service:hover .number .h1, .card.service:hover .number h1 {
   color: #0080004f;
 }
 
